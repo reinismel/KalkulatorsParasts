@@ -37,7 +37,7 @@ def vienads():
         result=0
         e.delete(0,END)
         e.insert(0,str(result))
-        return 0 
+    return 0 
 
 def notirit():
     e.delete(0,END)
@@ -45,7 +45,7 @@ def notirit():
     mathOp=""
     return 0
 
-e=Entry(mansLogs, width=15, font=('Ariel Black',20))
+e=Entry(mansLogs, width=15, bd=20,  font=('Ariel Black',20))
 e.grid(row=0, column=0, columnspan=4)
 
 btn0=Button(mansLogs, text="0", padx="40", pady='20', command=lambda:btnClick(0))
