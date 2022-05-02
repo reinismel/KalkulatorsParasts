@@ -1,7 +1,9 @@
 from ast import operator
 from tkinter import*
 from math import*
+from turtle import bgcolor
 mansLogs=Tk()
+mansLogs['bg']='#89CFF0'
 mansLogs.title("kalkulators")
 #mansLogs.geometry("300x300")
 
@@ -77,10 +79,10 @@ def kvadrats():
 
                                               
 
-e=Entry(mansLogs, width=20, bd=20, font=('Ariel Black',20))
+e=Entry(mansLogs, width=20, bd=20, font=('digital-7',20))
 e.grid(row=0, column=0, columnspan=5)
 
-btn0=Button(mansLogs, text="0", padx="45", pady='20', bd=5, command=lambda:btnClick(0))
+btn0=Button(mansLogs, text="0", padx="43", pady='20', bd=5, command=lambda:btnClick(0))
 btn1=Button(mansLogs, text="1", padx="43", pady='20', bd=5, command=lambda:btnClick(1))
 btn2=Button(mansLogs, text="2", padx="43", pady='20', bd=5, command=lambda:btnClick(2))
 btn3=Button(mansLogs, text="3", padx="43", pady='20', bd=5, command=lambda:btnClick(3))
@@ -91,15 +93,15 @@ btn7=Button(mansLogs, text="7", padx="43", pady='20', bd=5, command=lambda:btnCl
 btn8=Button(mansLogs, text="8", padx="43", pady='20', bd=5, command=lambda:btnClick(8))
 btn9=Button(mansLogs, text="9", padx="43", pady='20', bd=5, command=lambda:btnClick(9))
 btnClear=Button(mansLogs, text="C", padx="40", pady='20', bd=5, bg='#89CFF0', command=notirit)
-btnPlus=Button(mansLogs, text="+", padx="38", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("+"))
-btnEql=Button(mansLogs, text="=", padx="38", pady='20', bd=5, bg='#89CFF0', command=vienads)
-btnMinus=Button(mansLogs, text="-", padx="40", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("-"))
-btnReiz=Button(mansLogs, text="*", padx="43", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("*"))
-btnDal=Button(mansLogs, text="/", padx="40", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("/"))
+btnPlus=Button(mansLogs, text="+", padx="42", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("+"))
+btnEql=Button(mansLogs, text="=", padx="40", pady='20', bd=5, bg='#89CFF0', command=vienads)
+btnMinus=Button(mansLogs, text="-", padx="42", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("-"))
+btnReiz=Button(mansLogs, text="*", padx="42", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("*"))
+btnDal=Button(mansLogs, text="/", padx="42", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("/"))
 btnSak=Button(mansLogs, text="√", padx="40", pady='20', bd=5, bg='#89CFF0', command=sq_rt)
-btnLog=Button(mansLogs, text="log", padx="40", pady='20', bd=5, bg='#89CFF0', command=loga)
-btnKva=Button(mansLogs, text="x2", padx="39", pady='20', bd=5, bg='#89CFF0', command=kvadrats)
-btnProc=Button(mansLogs, text="%", padx="38", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("%"))
+btnLog=Button(mansLogs, text="log", padx="37", pady='20', bd=5, bg='#89CFF0', command=loga)
+btnKva=Button(mansLogs, text="x2", padx="40", pady='20', bd=5, bg='#89CFF0', command=kvadrats)
+btnProc=Button(mansLogs, text="%", padx="39", pady='20', bd=5, bg='#89CFF0', command=lambda:btnCommand("%"))
 
 
 btn1.grid(row=1,column=0)
